@@ -8,6 +8,7 @@
 
 import React from 'react';
 import type {Node} from 'react';
+import Auth from './Auth';
 import {
   SafeAreaView,
   ScrollView,
@@ -66,6 +67,13 @@ const App: () => Node = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <Header />
+        <View style={styles.sectionContainer}>
+          <Text style={styles.sectionTitle}>Step Zero</Text>
+          <Text style={styles.sectionDescription}>
+            Use <Text style={styles.highlight}>Okta</Text> for authentication.
+          </Text>
+          <Auth />
+        </View>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
