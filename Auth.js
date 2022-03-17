@@ -88,22 +88,7 @@ export default class Auth extends Component {
     if (this.state.authenticated) {
       return (
         <View style={styles.buttonContainer}>
-          <View style={styles.button}>
-            <Button
-              onPress={async () => {
-                this.getUserIdToken();
-              }}
-              title="Get User From Id Token"
-            />
-          </View>
-          <View style={styles.button}>
-            <Button
-              onPress={async () => {
-                this.getMyUser();
-              }}
-              title="Get User From Request"
-            />
-          </View>
+      
         </View>
       );
     }
