@@ -3,6 +3,9 @@ import React, { Component, Fragment } from 'react';
 import { SafeAreaView, ScrollView, Button, StyleSheet, Text, View } from 'react-native';
 import { createConfig, signIn, signOut, isAuthenticated, getUser, getUserFromIdToken, EventEmitter } from '@okta/okta-react-native';
 import configFile from './auth.config';
+import { LogBox } from 'react-native';
+LogBox.ignoreLogs(['new NativeEventEmitter']); // Ignore log notification by message
+LogBox.ignoreAllLogs(); //Ignore all log notifications
 
 export default class Auth extends Component {
   constructor() {

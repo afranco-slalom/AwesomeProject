@@ -51,16 +51,7 @@ public class MainApplication extends Application implements ReactApplication {
     initializeFlipper(this, getReactNativeHost().getReactInstanceManager());
   }
 
-// Required for rn built in EventEmitter Calls.
-  @ReactMethod
-  public void addListener(String eventName) {
-
-  }
-
-  @ReactMethod
-  public void removeListeners(Integer count) {
-
-  }  
+ 
 
   /**
    * Loads Flipper in React Native templates. Call this in the onCreate method with something like
